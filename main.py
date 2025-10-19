@@ -24,3 +24,11 @@ sushi_preparation.remove_value("serve")
 print('\nRemoved ending step:')
 sushi_preparation.print_list()
 
+sushi_preparation.remove_at("roll")
+print(f"\nRemoved at ('roll'): ")
+sushi_preparation.print_list()
+
+# the null output of C.
+removed = sushi_preparation.remove_at("serve")
+print(f"\nRemoved at ('serve'): {removed}")
+sushi_preparation.print_list()

@@ -59,7 +59,9 @@ class LinkedList:
             print(current.data, end=" -> ")
             current = current.next
         print("X")
-    
+
+#--- Activity  ---
+
     #Activity A.
     def remove_beginning(self):
         if self.head is None:
@@ -76,13 +78,32 @@ class LinkedList:
             removed_data = self.head.data
             self.head = None  
             return removed_data
-        current = self.head
-        while current.next.next:
-            current = current.next
-        removed_data = current.next
-        current.next = None  
+        tigatalon = self.head
+        while tigatalon.next.next:
+            tigatalon = tigatalon.next
+        removed_data = tigatalon.next.data
+        tigatalon.next = None  
         return removed_data
     
     #Acitivity C.
-    def remove_at(self):
-       
+    def remove_at(self, data):
+        if self.head is None:
+            return None 
+
+    
+        if self.head.data == data:
+            removed_data = self.head.data
+            self.head = self.head.next
+            return removed_data
+
+
+        tigatalon = self.head
+        while tigatalon.next:
+            if tigatalon.next.data == data:
+                removed_data = tigatalon.next.data
+                tigatalon.next = tigatalon.next.next 
+            tigatalon = tigatalon.next
+
+        return None
+
+            
