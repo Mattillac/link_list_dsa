@@ -20,3 +20,7 @@ sushi_preparation.remove_value("assemble")
 print('\nremoved beginning step:')
 sushi_preparation.print_list()
 
+sushi_preparation.remove_value("serve")
+print('\nRemoved ending step:')
+sushi_preparation.print_list()
+

@@ -69,4 +69,20 @@ class LinkedList:
         return removed_data
     
     #Activity B.
+    def remove_at_end(self):
+        if self.head is None:
+            return None  
+        if self.head.next is None:
+            removed_data = self.head.data
+            self.head = None  
+            return removed_data
+        current = self.head
+        while current.next.next:
+            current = current.next
+        removed_data = current.next
+        current.next = None  
+        return removed_data
+    
     #Acitivity C.
+    def remove_at(self):
+       
