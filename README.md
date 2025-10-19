@@ -4,8 +4,7 @@
 ###  _Feel free to try my program_
 
 # Here's the Assignment:
-## Assignment
-## Update the sample code and create the following methods
+### Update the sample code and create the following methods
 
 ### a. remove_beginning(self)  
  ### (this will return the data that was removed at the beginning)
