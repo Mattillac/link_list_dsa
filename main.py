@@ -1,9 +1,22 @@
-# Assignment (to be discuss and pass on Oct 19, 2025):
-# Update the sample code and create the following methods
-# Create the methods 
-# a. remove_beginning(self)  
-#this will return the data that was removed at the beginning  
-# b.  remove_at_end(self)
-#this will return the data that was removed at the end
-# c. remove_at(self,data) 
-#this will return the data that was removed else return null if data not found
+from linked_list import LinkedList
+
+sushi_preparation = LinkedList()
+sushi_preparation.insert_at_end("prepare")
+sushi_preparation.insert_at_end("roll")
+sushi_preparation.insert_at_beginning("assemble")
+
+print("Thy Sushi Prep Steps:")
+sushi_preparation.print_list()
+
+sushi_preparation.insert_after_value("prepare", "serve")
+print('\nAdded "serve" after prepare:')
+sushi_preparation.print_list()
+
+sushi_preparation.remove_value("roll")
+print('\nremoved "roll":')
+sushi_preparation.print_list()
+
+sushi_preparation.remove_value("assemble")
+print('\nremoved beginning step:')
+sushi_preparation.print_list()
+
